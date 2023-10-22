@@ -18,6 +18,7 @@ List<double> BillsAndCoins = new List<double>()
 
 List<int> quantities = new List<int>()
 {
+
     0,
     0,
     0,
@@ -41,6 +42,7 @@ for(int i = 0; i < BillsAndCoins.Count; i++)
     }
 }
 
+Console.WriteLine("printing quantities");
 for (int i = 0; i < quantities.Count; i++)
 {
     Console.WriteLine(quantities[i]);
