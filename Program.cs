@@ -32,7 +32,8 @@ List<int> quantities = new List<int>()
 };
 double valueRemaining = userInput;
 
-for(int i = 0; i < BillsAndCoins.Count; i++)
+Console.WriteLine("comparing values");
+for (int i = 0; i < BillsAndCoins.Count; i++)
 {
     Console.WriteLine(BillsAndCoins[i]);
     Console.WriteLine(valueRemaining > BillsAndCoins[i]);
