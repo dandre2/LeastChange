@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("How much money would you like?");
+Console.WriteLine("how much money would you like");
 double userInput = double.Parse(Console.ReadLine());
 
 List<double> BillsAndCoins = new List<double>()
@@ -16,37 +16,10 @@ List<double> BillsAndCoins = new List<double>()
     0.01
 };
 
-List<int> quantities = new List<int>()
-{
-
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-};
 double valueRemaining = userInput;
-
-Console.WriteLine("comparing values");
-for (int i = 0; i < BillsAndCoins.Count; i++)
+for (int i = 0; i <= BillsAndCoins.Count; i++)
 {
     Console.WriteLine(BillsAndCoins[i]);
-    Console.WriteLine(valueRemaining > BillsAndCoins[i]);
-    if(valueRemaining > BillsAndCoins[i])
-    {
-        quantities[i] = 1;
-    }
+    Console.WriteLine(valueRemaining == BillsAndCoins[i]);
+
 }
-
-Console.WriteLine("printing quantities");
-for (int i = 0; i < quantities.Count; i++)
-{
-    Console.WriteLine(quantities[i]);
-}
-
-
