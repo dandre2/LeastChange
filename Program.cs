@@ -25,10 +25,8 @@ double valueRemaining = userInput;
 // keep checking until value remaining equals zero
 
 
-for (int i = 0; i <= BillsAndCoins.Count; i++)
+
+foreach (var keyValue in BillsAndCoins)
 {
-    //print list
-   Console.WriteLine(BillsAndCoins[i]);
-   Console.WriteLine(valueRemaining == BillsAndCoins[i]);
-    
+    Console.WriteLine($"Bill: {keyValue.Key} Quantity: {keyValue.Value}");
 }
